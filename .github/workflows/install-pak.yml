@@ -1,7 +1,10 @@
 name: pak-install
 
 on:
-  workflow_dispatch
+  push:
+    branches: [develop-vs-github-action-install]
+  workflow_dispatch:
+   
 
 jobs:
   pak-install:
